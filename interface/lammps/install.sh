@@ -2,8 +2,8 @@
 PYNEP_PATH=$1
 LAMMPS_PATH=$2
 curdir=$(pwd)
-cp $PYNEP_PATH/nep_cpu/src/nep.*  $PYNEP_PATH/inference/lammps/USER-NEP/
-cp -r $PYNEP_PATH/inference/lammps/USER-NEP/ $LAMMPS_PATH/src
+cp $PYNEP_PATH/nep_cpu/src/nep.*  $PYNEP_PATH/interface/lammps/USER-NEP/
+cp -r $PYNEP_PATH/interface/lammps/USER-NEP/ $LAMMPS_PATH/src
 cd $LAMMPS_PATH/src
 make clean-serial
 make no-user-nep
